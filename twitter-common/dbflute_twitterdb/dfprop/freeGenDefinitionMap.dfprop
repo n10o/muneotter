@@ -1,0 +1,129 @@
+map:{
+    # ==========================================================================
+    #                                                                    Twitter
+    #                                                                    =======
+    ; TwitterEnvGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/twitter_env.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = SystemConfig.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = jp.bizreach.twitter.projectfw.core.direction
+            ; className = TwitterEnv
+        }
+        ; tableMap = map:{
+            ; exceptKeyList = list:{}
+            ; groupingKeyMap = map:{}
+            ; extendsPropRequest = null
+            ; superClassPackage = org.dbflute.saflute.core.direction
+            ; superClassSimpleName = ObjectiveConfig
+        }
+    }
+    ; TwitterConfigGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/twitter_config.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = SystemConfig.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = jp.bizreach.twitter.projectfw.core.direction
+            ; className = TwitterConfig
+        }
+        ; tableMap = map:{
+            ; exceptKeyList = list:{}
+            ; groupingKeyMap = map:{}
+            ; extendsPropRequest = TwitterEnvGen
+            ; isCheckImplicitOverride = true
+            ; interfacePackage = jp.bizreach.twitter.projectfw.core.direction
+            ; interfaceSimpleName = TwitterEnv
+            ; superClassPackage = jp.bizreach.twitter.projectfw.core.direction
+            ; superClassSimpleName = TwitterEnv.SimpleImpl
+        }
+    }
+    ; TwitterMessageGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/twitter_message_ja.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = UserMessages.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = jp.bizreach.twitter.projectfw.web.action
+            ; className = TwitterMessages
+        }
+        ; tableMap = map:{
+            ; groupingKeyMap = map:{ label = prefix:labels. }
+        }
+    }
+
+    # ==========================================================================
+    #                                                                   Nisetter
+    #                                                                   ========
+    ; NisetterConfigGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../twitter-nisetter/src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/nisetter_config.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = SystemConfig.vm	
+            ; outputDirectory = $$baseDir$$/java
+            ; package = jp.bizreach.twitter.domainfw.direction
+            ; className = NisetterConfig
+        }
+        ; tableMap = map:{
+            ; exceptKeyList = list:{}
+            ; groupingKeyMap = map:{}
+            ; extendsPropRequest = TwitterConfigGen
+            ; isCheckImplicitOverride = true
+            ; interfacePackage = jp.bizreach.twitter.projectfw.core.direction
+            ; interfaceSimpleName = TwitterConfig
+            ; superClassPackage = jp.bizreach.twitter.projectfw.core.direction
+            ; superClassSimpleName = TwitterConfig.SimpleImpl
+        }
+    }
+    ; NisetterMessageGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../twitter-nisetter/src/main
+            ; resourceType = PROP
+            ; resourceFile = $$baseDir$$/resources/nisetter_message_ja.properties
+        }
+        ; outputMap = map:{
+            ; templateFile = UserMessages.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = jp.bizreach.twitter.domainfw.action
+            ; className = NisetterMessages
+        }
+        ; tableMap = map:{
+            ; extendsPropRequest = TwitterMessageGen
+            ; isCheckImplicitOverride = true
+            ; groupingKeyMap = map:{ label = prefix:labels. }
+            ; superClassPackage = jp.bizreach.twitter.projectfw.web.action
+            ; superClassSimpleName = TwitterMessages
+        }
+    }
+    ; NisetterJspPathGen = map:{
+        ; resourceMap = map:{
+            ; baseDir = ../../twitter-nisetter/src/main
+            ; resourceType = FILE_PATH
+        }
+        ; outputMap = map:{
+            ; templateFile = JspPath.vm
+            ; outputDirectory = $$baseDir$$/java
+            ; package = jp.bizreach.twitter.domainfw.action
+            ; className = NisetterJspPath
+        }
+        ; tableMap = map:{
+            ; targetDir = $$baseDir$$/webapp/WEB-INF/view
+            ; targetExt = .jsp
+            ; targetKeyword = 
+            ; exceptPathList = list:{ contain:/view/common/ }
+        }
+    }
+}

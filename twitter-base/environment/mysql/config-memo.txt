@@ -1,0 +1,14 @@
+
+# ========================================================================================
+#                                                                            Configuration
+#                                                                            =============
+You should add the following settings to my.ini or my.cnf:
+
+# /* * * * * * * * * * * * * * * * * * * * * * * * Custom Settings
+character_set_server=utf8
+lower_case_table_names=1
+
+# GroupBy restriction is off because many projects use the wrong style
+# TRADITIONAL contains STRICT_ALL_TABLES, NO_ZERO_DATE and so on...
+sql_mode="TRADITIONAL"
+# * * * * * * * * * */

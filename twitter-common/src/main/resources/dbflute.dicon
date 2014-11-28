@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE components PUBLIC "-//SEASAR2.1//DTD S2Container//EN"
+    "http://www.seasar.org/dtd/components21.dtd">
+
+<components namespace="dbflute">
+    <include path="j2ee.dicon"/>
+
+    <!-- The components of DBFlute Runtime. -->
+    <component name="introduction" class="jp.bizreach.twitter.dbflute.allcommon.DBFluteInitializer"/>
+    <component name="invokerAssistant" class="jp.bizreach.twitter.dbflute.allcommon.ImplementedInvokerAssistant"/>
+    <component name="commonColumnAutoSetupper" class="jp.bizreach.twitter.dbflute.allcommon.ImplementedCommonColumnAutoSetupper"/>
+    <component name="behaviorSelector" class="jp.bizreach.twitter.dbflute.allcommon.ImplementedBehaviorSelector"/>
+    <component name="behaviorCommandInvoker" class="org.seasar.dbflute.bhv.core.BehaviorCommandInvoker"/>
+
+    <!-- The components of Behavior. -->
+    <component name="memberBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberBhv"/>
+    <component name="memberAddressBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberAddressBhv"/>
+    <component name="memberFollowingBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberFollowingBhv"/>
+    <component name="memberLoginBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberLoginBhv"/>
+    <component name="memberSecurityBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberSecurityBhv"/>
+    <component name="memberServiceBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberServiceBhv"/>
+    <component name="memberStatusBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberStatusBhv"/>
+    <component name="memberWithdrawalBhv" class="jp.bizreach.twitter.dbflute.exbhv.MemberWithdrawalBhv"/>
+    <component name="productBhv" class="jp.bizreach.twitter.dbflute.exbhv.ProductBhv"/>
+    <component name="productCategoryBhv" class="jp.bizreach.twitter.dbflute.exbhv.ProductCategoryBhv"/>
+    <component name="productStatusBhv" class="jp.bizreach.twitter.dbflute.exbhv.ProductStatusBhv"/>
+    <component name="purchaseBhv" class="jp.bizreach.twitter.dbflute.exbhv.PurchaseBhv"/>
+    <component name="regionBhv" class="jp.bizreach.twitter.dbflute.exbhv.RegionBhv"/>
+    <component name="serviceRankBhv" class="jp.bizreach.twitter.dbflute.exbhv.ServiceRankBhv"/>
+    <component name="tweetBhv" class="jp.bizreach.twitter.dbflute.exbhv.TweetBhv"/>
+    <component name="withdrawalReasonBhv" class="jp.bizreach.twitter.dbflute.exbhv.WithdrawalReasonBhv"/>
+</components>

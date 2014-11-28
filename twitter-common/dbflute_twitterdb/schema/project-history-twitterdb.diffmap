@@ -1,0 +1,174 @@
+map:{
+    ; 2013/11/11 19:43:27 = map:{
+        ; diffDate = 2013/11/11 19:43:27
+        ; tableDiff = map:{
+            ; tweet = map:{
+                ; tableName = tweet
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; DATETIME = map:{
+                        ; columnName = DATETIME
+                        ; diffType = ADD
+                    }
+                }
+            }
+        }
+    }
+    ; 2013/11/11 19:00:53 = map:{
+        ; diffDate = 2013/11/11 19:00:53
+        ; tableDiff = map:{
+            ; tweet = map:{
+                ; tableName = tweet
+                ; diffType = CHANGE
+                ; columnDiff = map:{
+                    ; TWEET_ID = map:{
+                        ; columnName = TWEET_ID
+                        ; diffType = CHANGE
+                        ; autoIncrementDiff = map:{
+                            ; next = true
+                            ; previous = false
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ; 2013/11/11 16:47:29 = map:{
+        ; diffDate = 2013/11/11 16:47:29
+        ; tableCount = map:{
+            ; next = 16
+            ; previous = 15
+        }
+        ; tableDiff = map:{
+            ; tweet = map:{
+                ; tableName = tweet
+                ; diffType = ADD
+            }
+        }
+    }
+    ; 2013/11/11 14:05:39 = map:{
+        ; diffDate = 2013/11/11 14:05:39
+        ; tableDiff = map:{
+            ; member = map:{
+                ; tableName = member
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_address = map:{
+                ; tableName = member_address
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_following = map:{
+                ; tableName = member_following
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_login = map:{
+                ; tableName = member_login
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_security = map:{
+                ; tableName = member_security
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_service = map:{
+                ; tableName = member_service
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_status = map:{
+                ; tableName = member_status
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; member_withdrawal = map:{
+                ; tableName = member_withdrawal
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; product = map:{
+                ; tableName = product
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; product_category = map:{
+                ; tableName = product_category
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; product_status = map:{
+                ; tableName = product_status
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; purchase = map:{
+                ; tableName = purchase
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; region = map:{
+                ; tableName = region
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; service_rank = map:{
+                ; tableName = service_rank
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+            ; withdrawal_reason = map:{
+                ; tableName = withdrawal_reason
+                ; diffType = CHANGE
+                ; unifiedSchemaDiff = map:{
+                    ; next = twitterdb
+                    ; previous = maihamadb
+                }
+            }
+        }
+    }
+}
